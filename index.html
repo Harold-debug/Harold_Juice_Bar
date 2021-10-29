@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="tailwind.css" rel="stylesheet" />
+    <title>Harold's Juice Bar</title>
+  </head>
+  <body class="flex flex-col">
+    <aside class="p-4 bg-gray-800 flex flex-col text-center">
+      <img
+        class="h-32 w-32 self-center"
+        src="images/._logo.png"
+        alt="healthy juice bar logo"
+      />
+      <h1 class="text-white uppercase font-medium text-2xl tracking-wider my-4">
+        Harold's Juice Bar
+      </h1>
+
+      <ul class="space-y-4">
+        <li>
+          <a
+            href=""
+            class="text-gray-200 hover:bg-gray-700 hover:text-white p-2 rounded"
+            >Products</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="text-gray-200 hover:bg-gray-700 hover:text-white p-2 rounded"
+            >Orders</a
+          >
+          <span class="text-green-900 bg-green-100 text-sm p=1.5 rounded-full"
+            >5</span
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="text-gray-200 hover:bg-gray-700 hover:text-white p-2 rounded"
+            >Inventory</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="text-gray-200 hover:bg-gray-700 hover:text-white p-2 rounded"
+            >Customers</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="text-gray-200 hover:bg-gray-700 hover:text-white p-2 rounded"
+            >Analytics</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="text-gray-200 hover:bg-gray-700 hover:text-white p-2 rounded"
+            >Coupons</a
+          >
+        </li>
+      </ul>
+      <span class="text-2xl">&#9881;</span>
+    </aside>
+    <main>
+      <div class="mt-4 flex justify-center items-center">
+        <img
+          class="h-8 w-8 rounded-full"
+          src="images/IMG_2898.JPG"
+          alt="user avatar"
+        />
+        <small class="text-gray-500 mx-4">Harold Geumtcheng</small>
+      </div>
+      <!--container for all main content-->
+      <div class="px-2 mt-8">
+        <!--container to align buttons and heading-->
+        <div class="flex flex-col items-center">
+          <h2 class="mb-4">All Products</h2>
+          <div>
+            <button
+              class="
+                textay-100
+                bg-indigo-500
+                hover:bg-indigo-400
+                px-4
+                py-2
+                text-sm
+                rounded
+              "
+            >
+              &#43; Add
+            </button>
+            <select
+              class="
+                text-sm
+                ml-2
+                px-4
+                py-2
+                border border-gray-300
+                rounded
+                focus\:outline-none focus\:border-indigo-500
+              "
+              name="bulk"
+              id="bulk"
+            >
+              <option value="">- Bulk actions -</option>
+              <option value="">Edit</option>
+              <option value="">Delete</option>
+            </select>
+          </div>
+        </div>
+        <section class="overflow-x-auto">
+          <table class="divide-y divide-gray-300">
+            <thead class="bg-gray-100">
+              <tr>
+                <th
+                  class="
+                    flex
+                    py-4
+                    px-6
+                    text-left text-xs
+                    font-medium
+                    text-gray-500
+                    uppercase
+                    tracking-wider
+                  "
+                >
+                  <input type="checkbox" class="mr-4" />
+                  Item
+                </th>
+                <th
+                  class="
+                    px-6
+                    text-left text-xs
+                    font-medium
+                    text-gray-500
+                    uppercase
+                    tracking-wider
+                  "
+                >
+                  Status
+                </th>
+                <th
+                  class="
+                    px-6
+                    text-left text-xs
+                    font-medium
+                    text-gray-500
+                    uppercase
+                    tracking-wider
+                  "
+                >
+                  Category
+                </th>
+                <th
+                  class="
+                    px-6
+                    text-left text-xs
+                    font-medium
+                    text-gray-500
+                    uppercase
+                    tracking-wider
+                  "
+                >
+                  Stock
+                </th>
+                <th
+                  class="
+                    px-6
+                    text-left text-xs
+                    font-medium
+                    text-gray-500
+                    uppercase
+                    tracking-wider
+                  "
+                >
+                  Price
+                </th>
+                <th
+                  class="
+                    px-6
+                    text-left text-xs
+                    font-medium
+                    text-gray-500
+                    uppercase
+                    tracking-wider
+                  "
+                >
+                  Edit
+                </th>
+              </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-300">
+              <tr>
+                <td class="flex items-center px-6 py-4">
+                  <input type="checkbox" />
+                  <img
+                    src="images/mango.jpg"
+                    alt="mango smoothie"
+                    class="h-10 w-10 mx-4"
+                  />
+                  <p
+                    class="
+                      text-sm
+                      font-medium
+                      text-gray-800
+                      tracking-wider
+                      whitespace-nowrap
+                    "
+                  >
+                    Mango Smoothie
+                  </p>
+                </td>
+                <td
+                  class="
+                    text-left text-sm
+                    px-6
+                    tracking-wider
+                    whitespace-nowrap
+                  "
+                >
+                  <span
+                    class="text-green-900 bg-green-200 px-4 py-2 rounded-full"
+                    >Active</span
+                  >
+                </td>
+                <td
+                  class="
+                    text-left text-sm
+                    px-6
+                    tracking-wider
+                    whitespace-nowrap
+                  "
+                >
+                  Smoothies
+                </td>
+                <td
+                  class="
+                    text-left text-sm
+                    px-6
+                    tracking-wider
+                    whitespace-nowrap
+                  "
+                >
+                  n/a
+                </td>
+                <td
+                  class="
+                    text-left text-sm
+                    px-6
+                    tracking-wider
+                    whitespace-nowrap
+                  "
+                >
+                  3.95
+                </td>
+                <td
+                  class="
+                    text-left text-sm
+                    px-6
+                    tracking-wider
+                    whitespace-nowrap
+                  "
+                >
+                  <a href="" class="text-indigo-500 hover:text-indigo-900"
+                    >Edit</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="flex items-center px-6 py-4">
+                  <input type="checkbox" />
+                  <img
+                    src="images/strawberry.jpg"
+                    alt="strawberry smoothie"
+                    class="h-10 w-10 mx-4"
+                  />
+                  <p
+                    class="
+                      text-sm
+                      font-medium
+                      text-gray-800
+                      tracking-wider
+                      whitespace-nowrap
+                    "
+                  >
+                    Strawberry Smoothie
+                  </p>
+                </td>
+                <td
+                  class="
+                    text-left text-sm
+                    px-6
+                    tracking-wider
+                    whitespace-nowrap
+                  "
+                >
+                  <span
+                    class="text-green-900 bg-green-200 px-4 py-2 rounded-full"
+                    >Active</span
+                  >
+                </td>
+                <td
+                  class="
+                    text-left text-sm
+                    px-6
+                    tracking-wider
+                    whitespace-nowrap
+                  "
+                >
+                  Smoothies
+                </td>
+                <td
+                  class="
+                    text-left text-sm
+                    px-6
+                    tracking-wider
+                    whitespace-nowrap
+                  "
+                >
+                  n/a
+                </td>
+                <td
+                  class="
+                    text-left text-sm
+                    px-6
+                    tracking-wider
+                    whitespace-nowrap
+                  "
+                >
+                  3.95
+                </td>
+                <td
+                  class="
+                    text-left text-sm
+                    px-6
+                    tracking-wider
+                    whitespace-nowrap
+                  "
+                >
+                  <a href="" class="text-indigo-500 hover:text-indigo-900"
+                    >Edit</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
