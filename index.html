@@ -5,20 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="tailwind.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
     <title>Harold's Juice Bar</title>
   </head>
-  <body class="flex flex-col">
-    <aside class="p-4 bg-gray-800 flex flex-col text-center">
+  <body class="flex flex-col lg:flex-row">
+    <aside
+      class="p-4 bg-gray-800 flex flex-col text-center lg:w-1/4 lg:h-screen"
+    >
       <img
         class="h-32 w-32 self-center"
         src="images/._logo.png"
         alt="healthy juice bar logo"
       />
-      <h1 class="text-white uppercase font-medium text-2xl tracking-wider my-4">
+      <h1
+        class="
+          text-white
+          uppercase
+          font-medium
+          text-2xl
+          tracking-wider
+          my-4
+          custom
+        "
+      >
         Harold's Juice Bar
       </h1>
 
-      <ul class="space-y-4">
+      <ul class="space-y-4 lg:space-y-8 lg:text-left lg:my-8">
         <li>
           <a
             href=""
@@ -71,10 +84,10 @@
           >
         </li>
       </ul>
-      <span class="text-2xl">&#9881;</span>
+      <span class="text-2xl lg:text-left lg:ml-2">&#9881;</span>
     </aside>
-    <main class="bg-gradient-to-r from-gray-200 to-gray -100">
-      <div class="mt-4 flex justify-center items-center">
+    <main class="bg-gradient-to-r from-gray-200 to-gray -100 lg:w-3/4 lg:p-4">
+      <div class="mt-4 flex justify-center items-center lg:justify-end">
         <img
           class="h-8 w-8 rounded-full"
           src="images/IMG_2898.JPG"
@@ -85,8 +98,8 @@
       <!--container for all main content-->
       <div class="px-2 mt-8">
         <!--container to align buttons and heading-->
-        <div class="flex flex-col items-center">
-          <h2 class="mb-4">All Products</h2>
+        <div class="flex flex-col items-center lg:flex-row lg:justify-between">
+          <h2 class="mb-4 lg:mb-0 lg:text-xl">All Products</h2>
           <div>
             <button
               class="
@@ -121,7 +134,7 @@
           </div>
         </div>
         <section class="overflow-x-auto">
-          <table class="divide-y divide-gray-300">
+          <table class="min-w-full divide-y divide-gray-300">
             <thead class="bg-gray-100">
               <tr>
                 <th
@@ -357,9 +370,18 @@
             </tbody>
           </table>
         </section>
-        <section class="flex flex-col items-center py-6 text=sm font-light">
+        <section
+          class="
+            flex flex-col
+            items-center
+            py-6
+            text=sm
+            font-light
+            lg:flex-row lg:justify-between
+          "
+        >
           <p>Showing 10 of 132 products</p>
-          <ul class="flex mt-4">
+          <ul class="flex mt-4 lg:mt-0">
             <li>
               <span class="mr-4">&lt;</span>
               <a
@@ -368,7 +390,7 @@
                   p-2
                   text-gray-100
                   bg-indigo-500
-                  hover:bg-indigo-100
+                  hover:bg-indigo-400
                   rounded-full
                 "
                 >1</a
