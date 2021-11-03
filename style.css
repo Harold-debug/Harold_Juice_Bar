@@ -3,6 +3,8 @@
 @tailwind utilities;
 @tailwind screens;
 
-.custom {
-  color: orange;
+@layer components {
+  .nav-link {
+    @apply text-gray-200 hover:bg-gray-700 hover:text-white p-2 rounded;
+  }
 }
